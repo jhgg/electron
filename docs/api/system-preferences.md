@@ -439,3 +439,13 @@ Returns `Object`:
 * `prefersReducedMotion` Boolean - Determines whether the user desires reduced motion based on platform APIs.
 
 Returns an object with system animation settings.
+
+## Properties
+
+### `systemPreferences.appLevelAppearance` _macOS_
+
+A `String` property that determines the macOS appearance setting for
+your application. This maps to values in: [NSApplication.appearance](https://developer.apple.com/documentation/appkit/nsapplication/2967170-appearance?language=objc). Setting this will override the
+system default as well as the value of `getEffectiveAppearance`.
+
+Possible values that can be set are `dark` and `light`, and possible return values are `dark`, `light`, and `unknown`.
